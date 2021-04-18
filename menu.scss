@@ -1,0 +1,146 @@
+.current_menu {
+    background-color: rgba(#f7b977, 0.5);
+}
+
+.main {
+    font-family: 'ktegaki';
+    margin-bottom: 50px;
+    .container {
+        display: flex;
+        .sideber {
+            margin: 320px 0 50px 0;
+            ul {
+                li {
+                    font-size: 30px;
+                    line-height: 70px;
+                    border-bottom: dashed 3px #f7b977;
+                    &:hover {
+                        background-color: rgba(#f7b977, 0.8);
+                    }
+                    a {
+                        color: black;
+                        background-image: url(img/nikukyu.png);
+                        background-repeat: no-repeat;
+                        background-position: left;
+                        background-size: 30px;
+                        padding-left: 40px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 1170px) {
+            flex-direction: column;
+            .sideber {
+                margin: 100px 0 0 0;
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    li {
+                        width: 23%;
+                        font-size: 25px;
+                        line-height: 60px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 800px) {
+            .sideber {
+                width: 90%;
+                margin: 100px auto 0 auto;
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    li {
+                        width: 45%;
+                        font-size: 16px;
+                        line-height: 50px;
+                        a {
+                            background-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .content {
+            width: 70%;
+            margin: 0 auto;
+            @media (max-width: 1170px) {
+                width: 90%;
+            }
+            .subtitle {
+                text-align: center;
+                p {
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                    span {
+                        font-size: 40px;
+                    }
+                    @media (max-width: 650px) {
+                        font-size: 23px;
+                        span {
+                            font-size: 33px;
+                        }
+                    }
+                }
+            }
+            .menu_detailes {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .menu_detaile {
+                    width: 29%;
+                    margin: 15px;
+                    h3 {
+                        background-image: url(img/dog_icon.png);
+                        background-repeat: no-repeat;
+                        background-position: left;
+                        background-size: 40px;
+                        padding-left: 45px;
+                        position: relative;
+                        text-align: left;
+                        font-size: 15px;
+                        margin-bottom: 10px;
+                        line-height: 65px;
+                        &:after {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 10px;
+                            content: '';
+                            background-image: -webkit-repeating-linear-gradient(135deg, #f7b977, #f7b977 1px, transparent 2px, transparent 5px);
+                            background-image: repeating-linear-gradient(-45deg, #f7b977, #f7b977 1px, transparent 2px, transparent 5px);
+                            background-size: 7px 7px;
+                            -webkit-backface-visibility: hidden;
+                            backface-visibility: hidden;
+                          }
+                    }
+                    img {
+                        width: 100%;
+                    }
+                    p {
+                        font-size: 20px;
+                        overflow-wrap: break-word;
+                    }
+                }
+                @media (max-width: 1170px) {
+                    .menu_detaile {
+                      width: 40%;
+                      h3 {
+                          font-size: 16px;
+                      }
+                    }
+                }
+                @media (max-width: 650px) {
+                    .menu_detaile {
+                      width: 100%;
+                      h3 {
+                          font-size: 17px;
+                      }
+                    }
+                }
+            }
+        }
+    }
+}

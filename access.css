@@ -1,0 +1,188 @@
+.main {
+  font-family: 'ktegaki';
+  text-align: center;
+}
+
+.main .access {
+  background: url(img/nikukyu3.png);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  width: 100%;
+  padding-bottom: 150px;
+}
+
+.main .access .container .access_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 950px) {
+  .main .access .container .access_content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.main .access .container .access_content img {
+  width: 40%;
+  border: solid 10px #f7b977;
+}
+
+.main .access .container .access_content .detail {
+  font-size: 25px;
+}
+
+.main .access .container .access_content .detail dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 50px;
+  border-bottom: dashed 3px #f7b977;
+  margin-bottom: 15px;
+}
+
+.main .access .container .access_content .detail dl dt {
+  width: 150px;
+  text-align: left;
+}
+
+@media (max-width: 1170px) {
+  .main .access .container .access_content .detail {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 950px) {
+  .main .access .container .access_content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main .access .container .access_content img {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  .main .access .container .access_content .detail {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main .access .container .access_content .detail {
+    width: 90%;
+  }
+  .main .access .container .access_content .detail dl dt {
+    width: 100px;
+    font-size: 20px;
+  }
+  .main .access .container .access_content .detail dl dd {
+    font-size: 12px;
+  }
+}
+
+.main .map {
+  background: url(img/nikukyu3.png);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  width: 100%;
+  padding-bottom: 150px;
+}
+
+@media (max-width: 650px) {
+  .main .map iframe {
+    height: 300px;
+  }
+}
+
+.main .contact {
+  padding-bottom: 100px;
+}
+
+.main .contact .container .contact_content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main .contact .container .contact_content span {
+  display: block;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 650px) {
+  .main .contact .container .contact_content span {
+    font-size: 20px;
+  }
+}
+
+.main .contact .container .contact_content .instagram {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.main .contact .container .contact_content .instagram .instagram-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #7ff1b8;
+  font-size: 40px;
+}
+
+.main .contact .container .contact_content .instagram .instagram-btn .icon-wrapper {
+  width: 65px;
+  height: 65px;
+  background: #4d4d4d;
+}
+
+.main .contact .container .contact_content .instagram .instagram-btn .icon-wrapper .icon {
+  color: #FFF;
+  font-size: 50px;
+  line-height: 65px;
+}
+
+.main .contact .container .contact_content .instagram .instagram-btn:hover .icon-wrapper {
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+}
+
+.main .contact .container .contact_content .instagram .instagram-btn:hover .icon-wrapper .icon {
+  color: #FFF;
+  font-size: 50px;
+  line-height: 65px;
+}
+
+.main .contact .container .contact_content .instagram .instagram-btn:hover .instagram-icon {
+  position: relative;
+  overflow: hidden;
+}
+
+.main .contact .container .contact_content .instagram .instagram-btn:hover .instagram-icon::before {
+  content: '';
+  position: absolute;
+  top: 32px;
+  left: -25px;
+  width: 65px;
+  height: 65px;
+  background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+}
+
+.main .contact .container .contact_content .instagram .instagram-btn:hover .instagram-icon .fa-instagram {
+  position: relative;
+}
+
+.main .contact .container .contact_content .instagram .instagram-btn .icon-wrapper {
+  border-radius: 5px;
+}
+/*# sourceMappingURL=access.css.map */

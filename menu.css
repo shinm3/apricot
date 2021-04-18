@@ -1,0 +1,191 @@
+.current_menu {
+  background-color: rgba(247, 185, 119, 0.5);
+}
+
+.main {
+  font-family: 'ktegaki';
+  margin-bottom: 50px;
+}
+
+.main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .container .sideber {
+  margin: 320px 0 50px 0;
+}
+
+.main .container .sideber ul li {
+  font-size: 30px;
+  line-height: 70px;
+  border-bottom: dashed 3px #f7b977;
+}
+
+.main .container .sideber ul li:hover {
+  background-color: rgba(247, 185, 119, 0.8);
+}
+
+.main .container .sideber ul li a {
+  color: black;
+  background-image: url(img/nikukyu.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 30px;
+  padding-left: 40px;
+}
+
+@media (max-width: 1170px) {
+  .main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .container .sideber {
+    margin: 100px 0 0 0;
+  }
+  .main .container .sideber ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main .container .sideber ul li {
+    width: 23%;
+    font-size: 25px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main .container .sideber {
+    width: 90%;
+    margin: 100px auto 0 auto;
+  }
+  .main .container .sideber ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main .container .sideber ul li {
+    width: 45%;
+    font-size: 16px;
+    line-height: 50px;
+  }
+  .main .container .sideber ul li a {
+    background-size: 20px;
+  }
+}
+
+.main .container .content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1170px) {
+  .main .container .content {
+    width: 90%;
+  }
+}
+
+.main .container .content .subtitle {
+  text-align: center;
+}
+
+.main .container .content .subtitle p {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.main .container .content .subtitle p span {
+  font-size: 40px;
+}
+
+@media (max-width: 650px) {
+  .main .container .content .subtitle p {
+    font-size: 23px;
+  }
+  .main .container .content .subtitle p span {
+    font-size: 33px;
+  }
+}
+
+.main .container .content .menu_detailes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .container .content .menu_detailes .menu_detaile {
+  width: 29%;
+  margin: 15px;
+}
+
+.main .container .content .menu_detailes .menu_detaile h3 {
+  background-image: url(img/dog_icon.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 40px;
+  padding-left: 45px;
+  position: relative;
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 10px;
+  line-height: 65px;
+}
+
+.main .container .content .menu_detailes .menu_detaile h3:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  content: '';
+  background-image: -webkit-repeating-linear-gradient(135deg, #f7b977, #f7b977 1px, transparent 2px, transparent 5px);
+  background-image: repeating-linear-gradient(-45deg, #f7b977, #f7b977 1px, transparent 2px, transparent 5px);
+  background-size: 7px 7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.main .container .content .menu_detailes .menu_detaile img {
+  width: 100%;
+}
+
+.main .container .content .menu_detailes .menu_detaile p {
+  font-size: 20px;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 1170px) {
+  .main .container .content .menu_detailes .menu_detaile {
+    width: 40%;
+  }
+  .main .container .content .menu_detailes .menu_detaile h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main .container .content .menu_detailes .menu_detaile {
+    width: 100%;
+  }
+  .main .container .content .menu_detailes .menu_detaile h3 {
+    font-size: 17px;
+  }
+}
+/*# sourceMappingURL=menu.css.map */
